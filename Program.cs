@@ -13,7 +13,7 @@ namespace ConsoleApp1
             string[] palavras = new string[] { "oculos", "torre", "mesa", "cadeira", "balança" };
             
             Random rand = new Random();
-            int indexWord = rand.Next(0, 3);
+            int indexWord = rand.Next(0, palavras.Length - 1); 
 
             string wordChoice = palavras[indexWord];
             char[] word = new char[wordChoice.Length];
@@ -35,8 +35,6 @@ namespace ConsoleApp1
             Console.WriteLine("\n");
 
             bool acertou = false;
-
-
 
             while (!acertou)
             {
